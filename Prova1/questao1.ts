@@ -106,7 +106,7 @@ class Fornecedor{
         produto.id_produto = "326"
         produto.descricao = "Parafuso"
         produto.fornecedor = fornecedor
-        produto.ValorUnitario = 5
+        produto.ValorUnitario = 0
 
         produto.valorDoProdutoEmEstoque();
     
@@ -135,7 +135,7 @@ class Fornecedor{
     
         set Quantidade (quantidade: number) {
             if (quantidade < 0) {
-                console.log("Valor invalido")
+                console.log("Quantidade invalido")
                 } else {
                 this._Quantidade = quantidade;
             }
